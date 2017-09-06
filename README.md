@@ -1,5 +1,7 @@
 # 2048-python-gym
 
+![sample](img/sample.jpg)
+
 ## About
 Based on the popular game [2048](https://github.com/gabrielecirulli/2048) by Gabriele Cirulli, here is Python version wrapped by [OpenAI gym](https://github.com/openai/gym).
 
