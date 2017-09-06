@@ -1,8 +1,3 @@
-#
-# CS1010FC --- Programming Methodology
-#
-# Mission N Solutions
-#
 from random import *
 
 def new_game(n):
@@ -18,10 +13,10 @@ def add_new_tile(mat):
     while(mat[a][b]!=0):
         a=randint(0,len(mat)-1)
         b=randint(0,len(mat)-1)
-    mat[a][b]=2
+    mat[a][b] = 2 if random() < 0.9 else 4
     return mat
 
-def max_title(mat):
+def max_tile(mat):
     max_tile = 0
     for i in range(len(mat)):
         for j in range(len(mat[i])):
@@ -87,8 +82,6 @@ def merge(mat):
 
 
 def up(game):
-        print("up")
-        # return matrix after shifting up
         game=transpose(game)
         game,done=cover_up(game)
         temp=merge(game)
@@ -99,7 +92,6 @@ def up(game):
         return (game,done)
 
 def down(game):
-        print("down")
         game=reverse(transpose(game))
         game,done=cover_up(game)
         temp=merge(game)
@@ -110,8 +102,6 @@ def down(game):
         return (game,done)
 
 def left(game):
-        print("left")
-        # return matrix after shifting left
         game,done=cover_up(game)
         temp=merge(game)
         game=temp[0]
@@ -120,8 +110,6 @@ def left(game):
         return (game,done)
 
 def right(game):
-        print("right")
-        # return matrix after shifting right
         game=reverse(game)
         game,done=cover_up(game)
         temp=merge(game)
