@@ -10,7 +10,7 @@ import PIL.Image
 import PIL.ImageDraw
 import PIL.ImageFont
 
-import logic
+from . import logic
 
 CELL_SIZE = 50
 GRID_PADDING = 10

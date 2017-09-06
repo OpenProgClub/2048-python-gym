@@ -10,17 +10,17 @@ Based on the popular game [2048](https://github.com/gabrielecirulli/2048) by Gab
 
 ## Example
 ```
-import puzzle
+import env2048.core
 
-env = puzzle.Env("your/image/save/dir")
+env = env2048.core.Env("your/image/save/dir")
 env.reset()
 env.render()
 ```
 ## If you want to override
 ```
-import puzzle
+import env2048.core
 
-class Your2048Env(puzzle.Env):
+class Your2048Env(env2048.core.Env):
     def get_reward(self, moved):
         ...
 ```
