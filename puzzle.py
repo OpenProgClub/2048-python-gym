@@ -19,7 +19,7 @@ ELEMENT_SIZE = CELL_SIZE + 2 * GRID_PADDING
 MATRIX_SIZE  = 4
 IMAGE_SIZE   = ELEMENT_SIZE * MATRIX_SIZE 
 
-FONT = PIL.ImageFont.truetype("/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-B.ttf", 25)
+FONT = PIL.ImageFont.truetype(os.path.join("font", "varta", "Varta-Bold.ttf"), 30)
 
 BACKGROUND_COLOR_GAME = "#92877d"
 BACKGROUND_COLOR_DICT = {
