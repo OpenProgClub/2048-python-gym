@@ -1,17 +1,24 @@
-2048-python
-===========
+# 2048-python
 
-Based on the popular game [2048](https://github.com/gabrielecirulli/2048) by Gabriele Cirulli, here is a Python version that uses TKinter. 
+## About
+Based on the popular game [2048](https://github.com/gabrielecirulli/2048) by Gabriele Cirulli, here is Python version wrapped by [OpenAI gym](https://github.com/openai/gym). 
 
-![screenshot](img/screenshot.png)
+## Dependencies
+- gym
+- numpy
+- pillow
 
-To start the game, run:
-    
-    $ python3 puzzle.py
+## Example
+```
+import puzzle
+
+env = puzzle.Env("your/image/save/dir")
+env.reset()
+env.render()
+```
 
 
-Contributors:
-==
-
+## Contributors:
+- [yangshun](https://github.com/yangshun)
 - [Tay Yang Shun](http://github.com/yangshun)
 - [Emmanuel Goh](http://github.com/emman27)
